@@ -1,0 +1,54 @@
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+application-local.properties
+application-local.yml
+*.pem
+*.key
+*.keystore
+# Dependencies, builds, caches and editor state
+node_modules/
+dist/
+target/
+build/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.idea/
+.vscode/
+*.iml
+*.log
+.DS_Store
+Thumbs.db
+*.sarif.json
+# Records and runtime imaging artifacts stay local
+/neusoft-mysql-database/neusoft_db.sql
+upload/
+uploads/
+cases/
+New_Patients_Scan_Data/
+*.dcm
+*.nii
+*.nii.gz
+*.nrrd
+*.mha
+*.mhd
+*.ply
+*.glb
+*.zip
+# External models, vendor checkouts and training outputs
+/neusoft-python-backend/bundles/
+/neusoft-python-backend/spleen-ct-app-backend/
+*.gguf
+*.pt
+*.pth
+*.safetensors
+neusoft_outputs/
+Neusoft_Final/
+/neusoft-fine-tuned-RAG-model/*_NOTEBOOK.ipynb
+/neusoft-fine-tuned-RAG-model/neusoft_training_results.png
+# Local publication payloads and backups
+/.portfolio-local/
